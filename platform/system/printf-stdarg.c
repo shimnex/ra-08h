@@ -32,7 +32,7 @@
 #include <stdbool.h>
 #include <stdarg.h>
 #include <stdio.h>
-#include <stdint-gcc.h>
+//#include <stdint-gcc.h> //fatal error: stdint-gcc.h: No such file or directory
 #include "tremo_uart.h"
 
 #include "tremo_regs.h"
