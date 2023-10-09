@@ -1,12 +1,27 @@
-# ASR6601 SDK
+# Ra-08H-KIT LoraWAN module : US915 TTN/Helium experiments
 
-ASR6601 is a general LPWAN Wireless Communication SoC, with integrated RF Transceiver, Modem and a 32-bit RISC MCU. The RF Transceiver has continuous frequency coverage from 150 MHz to 960 MHz. The Modem supports LoRa modulation for LPWAN use cases and (G)FSK modulation for legacy use cases. The Modem also supports BPSK modulation in TX and (G)MSK modulation in TX and RX. The LPWAN Wireless Communication Module designed with ASR6601 provides ultralong range and ultra-low power communication for LPWAN application.
+This is a fork of the official [ASR6601 repository](https://github.com/asrlora/asr_lora_6601) integrating the [Ra-08H develoment guide](https://github.com/Ai-Thinker-Open/Ai-Thinker-LoRaWAN-Ra-08/).
 
-ASR6601 can achieve a high sensitivity to -148 dBm and the maximum transmit power is up to +22 dBm. This makes the chip suitable to be used in long range LPWAN and have high efficiency. The total chip package is of very small size, QFN 6 mm x 6 mm/QFN 8 mm x 8 mm.
+## Setup
 
-&nbsp;
+See [Ra-08 instruction](https://github.com/Ai-Thinker-Open/Ai-Thinker-LoRaWAN-Ra-08/#5sdk-preparation)
 
-For more details, please refer to **[ASR Documents Page](https://asriot.readthedocs.io/en/latest).**
+> Python script for burning don't work on all linux system.
+>
+> Use Windows version [tools/programmer](./tree/master/tools/programmer)
 
-&nbsp;
+## Examples for Ra-08H module
 
+See directory [/projects/RA08HKIT-EVAL/examples](./tree/master/projects/RA08HKIT-EVAL/examples)
+
+- led : Flashing 3 onboard leds.
+- lorawan/class_c : Connecting device on TTN/Helium network using US915 subband #2.
+
+## Resources & docs
+
++ ASR6601 : (https://asriot.readthedocs.io/en/latest/ASR6601/)
++ Ra-08H : (https://docs.ai-thinker.com/en/lorawan#ra-08_h_resource_summary)
++ LoRaMac-node : (https://github.com/Lora-net/LoRaMac-node/tree/v4.4.0) ASR6601 seems to be based on version ~ 4.4.
+
+- TTN US915 band : (https://www.thethingsnetwork.org/docs/lorawan/frequency-plans/#us902-928)
+- Helium US915 band : (https://docs.helium.com/iot/lorawan-frequency-plans/#us915)
